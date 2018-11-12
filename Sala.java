@@ -1,4 +1,3 @@
-package chat;
 import java.io.*;
 
 public class Sala
@@ -12,4 +11,6 @@ public class Sala
 	{
 
 	}
+
+	// getUsuarios
 }
