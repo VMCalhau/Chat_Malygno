@@ -33,8 +33,10 @@ public class Usuario
 
 	//enviar msg, receber,
 
-	public Usuario (Socket con, ObjectOutputStream transmissor, ObjectInputStream receptor, String nome,Sala sala) throws Exception
+	public Usuario (Socket con, ObjectOutputStream transmissor, ObjectInputStream receptor, String nome, Sala sala) throws Exception
 	{
+		if (con == null || transmissor == null || receptor == null || nome == null || sala == null)
+			throw new Exception("Parametros invalidos");
 		// validar parametros
 		// instanciar PrintWriter e BufferedReader
 		// mandar todos nomes de salas
